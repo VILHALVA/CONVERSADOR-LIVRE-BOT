@@ -69,7 +69,6 @@ def handle_error_mode(message):
             print("BOT REINICIADO!")
             bot.stop_polling()
             os.execv(sys.executable, [sys.executable] + sys.argv)
-
         else:
             bot.reply_to(message, "🤔PARECE QUE ESSA FRASE NÃO ESTÁ NO MEU DATABASE. POR FAVOR, ENVIE A FRASE SEGUINDO ESSE MODELO: 'PALAVRA CHAVE': 'RESPOSTA'")
     elif not criar_enabled and erro_enabled:
