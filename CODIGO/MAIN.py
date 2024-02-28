@@ -1,5 +1,7 @@
 import telebot
 import json
+import sys
+import os
 from TOKEN import *
 
 bot = telebot.TeleBot(TOKEN)
@@ -64,6 +66,10 @@ def handle_error_mode(message):
             word, response = map(str.strip, message.text.split(":", 1))
             save_response_to_file(word, response)
             bot.reply_to(message, "😃NOVA RESPOSTA ADICIONADA COM SUCESSO!")
+            print("BOT REINICIADO!")
+            bot.stop_polling()
+            os.execv(sys.executable, [sys.executable] + sys.argv)
+
         else:
             bot.reply_to(message, "🤔PARECE QUE ESSA FRASE NÃO ESTÁ NO MEU DATABASE. POR FAVOR, ENVIE A FRASE SEGUINDO ESSE MODELO: 'PALAVRA CHAVE': 'RESPOSTA'")
     elif not criar_enabled and erro_enabled:
@@ -91,5 +97,5 @@ def handle_message(message):
 
 if __name__ == '__main__':
     print("BOT EM EXECUÇÃO!")
-    bot.infinity_polling()
+    bot.infinity_polling(timeout=60)
     print("FIM")
