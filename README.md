@@ -55,27 +55,7 @@ Significa o seguinte:
 
 Essas configurações permitem controlar o comportamento do bot de acordo com suas necessidades e preferências. Ajuste as configurações conforme desejado para personalizar a experiência do bot de acordo com sua necessidade.
 
-## COMO USAR?
-### BAIXANDO O PROJETO:
-**Passo 1:** Clone o repositório para o seu sistema local.
-
-```bash
-git clone https://github.com/VILHALVA/CONVERSADOR-LIVRE-BOT.git
-```
-
-**Passo 2:** Navegue até o diretório do projeto.
-
-```bash
-cd CONVERSADOR-LIVRE-BOT
-```
-
-**Passo 3:** Descompacte o arquivo ZIP (se você baixou manualmente):
-
-```bash
-unzip CONVERSADOR-LIVRE-BOT.zip
-```
-
-### EXECUTANDO O PROJETO:
+## EXECUTANDO O PROJETO:
 1. **Coloque o Token:**
    - Antes de executar o bot, é necessário substituir pelo seu token no arquivo `TOKEN.py`, o qual pode ser obtido por meio do [@BotFather](https://t.me/BotFather). Certifique-se também de que todas as dependências estejam instaladas em sua máquina. Se você não estiver familiarizado com esses passos, confira nosso [curso completo sobre a criação de bots no Telegram](https://github.com/VILHALVA/CURSO-DE-TELEGRAM-BOT) para obter orientações detalhadas.
 
@@ -86,9 +66,7 @@ unzip CONVERSADOR-LIVRE-BOT.zip
 ```
    - Inicie o bot enviando o comando `/start`. Receba uma mensagem de boas-vindas e Converse.
 
-## CREDITOS:
-- [PROJETO CRIADO PELO VILHALVA](https://github.com/VILHALVA)
-
 ## SAIBA MAIS:
+- [PROJETO CRIADO PELO VILHALVA](https://github.com/VILHALVA)
 - [FAÇA O CURSO DE TELEGRAM BOT](https://github.com/VILHALVA/CURSO-DE-TELEGRAM-BOT)
 - [FAÇA O CURSO DE JSON](https://github.com/VILHALVA/CURSO-DE-JSON)
